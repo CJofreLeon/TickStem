@@ -59,7 +59,7 @@ Construido con **Java** y el framework **Spring Boot**, sigue un patrón de dise
 - **Entidades (`Entities`):** Modelan los objetos del dominio que se persisten en la base de datos.
 
 **Tecnologías Principales:**
-- **Java 17**
+- **Java 24**
 - **Spring Boot 3**
 - **Spring Security (JWT)**
 - **Spring Data JPA (Hibernate)**
@@ -105,11 +105,11 @@ Para facilitar el inicio, la base de datos se inicializa automáticamente con un
 -   **Contraseña:** `password`
 
 **Nota Importante sobre la Contraseña:**
-La contraseña `password` se inserta en texto plano en la base de datos durante la inicialización. Sin embargo, la aplicación backend (Spring Boot) utiliza un mecanismo de hashing de contraseñas (como BCrypt) por razones de seguridad. Esto significa que **no podrás iniciar sesión con la contraseña `password` directamente** para este usuario.
+La contraseña `password` se inserta en texto plano en la base de datos durante la inicialización. Sin embargo, la aplicación backend (Spring Boot) utiliza un mecanismo de hashing de contraseñas (como BCrypt) por razones de seguridad.
 
 Para obtener un usuario superadmin funcional con el que puedas iniciar sesión:
 1.  Una vez que la aplicación esté completamente levantada y accesible en `http://localhost:3000`, utiliza la interfaz de registro de usuarios de la aplicación para crear un nuevo usuario.
-2.  Asegúrate de que a este nuevo usuario se le asigne el rol de `SUPERADMIN` (esto podría requerir una modificación manual en la base de datos o un endpoint específico si la aplicación lo permite). La contraseña que establezcas durante el registro se hasheará correctamente.
+
 
 ---
 
